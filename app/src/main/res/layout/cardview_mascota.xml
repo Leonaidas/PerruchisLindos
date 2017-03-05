@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chepo"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_columnWeight=".5">
+
+                <ImageView
+                    android:id="@+id/imgWhitebone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/whitebone"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvnombrePet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NombrePet"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_columnWeight=".5"
+                android:layoutDirection="rtl">
+
+                <ImageView
+                    android:id="@+id/imgYellowbone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/yellowbone"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
